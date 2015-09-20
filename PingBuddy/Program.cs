@@ -21,7 +21,7 @@ namespace PingBuddy
  
             Drawing.OnDraw += (arg) =>
             {
-                if (Config.Item("Show").IsActive())
+                if (Config["Show"].Cast<Checkbox>().CurrentValue)
                     Drawing.DrawText(Drawing.Width*0.94f, Drawing.Height*0.05f, Color.GreenYellow, "Ping: " + Game.Ping);
             };
         }
