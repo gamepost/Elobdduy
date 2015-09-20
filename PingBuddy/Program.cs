@@ -1,10 +1,14 @@
 #region
-using LeagueSharp;
-using LeagueSharp.Common;
 using System.Drawing;
+using EloBuddy;
+using EloBuddy.SDK;
+using EloBuddy.SDK.Enumerations;
+using EloBuddy.SDK.Events;
+using EloBuddy.SDK.Menu;
+using EloBuddy.SDK.Menu.Values;
 #endregion
 
-namespace GamePing
+namespace PingBuddy
 {
     internal class Program
     {
@@ -12,7 +16,7 @@ namespace GamePing
 
         private static void Main(string[] args)
         {
-            Config = new Menu("Game Ping", "GamePing", true);
+            Config = new Menu("Game Ping", "PingBuddy", true);
             Config.AddItem(new MenuItem("Show", "Show Game Ping").SetValue(true));
             Config.AddToMainMenu();
  
