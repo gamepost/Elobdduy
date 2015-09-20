@@ -17,7 +17,7 @@ namespace PingBuddy
         private static void Main(string[] args)
         {
             Config = MainMenu.AddSubMenu("Game Ping", "PingBuddy");
-            Config.Add("Show", new Checkbox("Show Game Ping"));
+            Config.Add("Show", new CheckBox("Show Game Ping"));
  
             Drawing.OnDraw += (arg) =>
             {
